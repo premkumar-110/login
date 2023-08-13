@@ -17,65 +17,6 @@
 <body>
     <div class="container">
     <div id="errorMessage" class="alert alert-danger d-none"></div>
-
-
-    
-        <div class="row top_border registerContainer" id="register" style="display: none;">
-            <div class="col">
-                <h3 class="text-center " style="color:#6383FA;"><b>REGISTER</b></h3>
-                <hr>
-                <form id="reg">
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <label for="username" class="form-label">
-                                Username
-                            </label>
-                            <div class="input-group flex-nowrap">
-                                <span class="input-group-text" id="addon-wrapping"> <i class="bi bi-person"></i> </span>
-                                <input name="username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="dob" class="form-label">Date of Birth</label>
-                            <input name="dob" type="date" class="form-control" id="dob" name="dob">
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-md-12">
-                            <label for="contact" class="form-label">Contact Details</label>
-                            <textarea name="contact" style="resize: none;" type="textarea" class="form-control" id="contact" name="contact" placeholder="Enter your contact details"></textarea>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-md-12">
-                            <label for="password" class="form-label">Password</label>
-                            <div class="input-group flex-nowrap">
-                                <span class="input-group-text" id="addon-wrapping">
-                                    <span class="material-symbols-outlined">
-                                        password
-                                    </span>
-                                </span>
-                                <input id="regPass" name="password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="addon-wrapping">
-                                <span class="input-group-text" id="visibility-toggle">
-                                    <span class="material-symbols-outlined " id="visibility-on" style="display: none;"> visibility</span>
-                                    <span class="material-symbols-outlined " id="visibility-off">visibility_off</span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row p-2 text-end">
-                        <div class="col-md-12">
-                            Already have an account? <a  id="showLoginLink" style="color: #0d6efd; cursor: pointer;">Login</a>
-                        </div>
-                    </div>
-                    <div id="errorMessage" class="alert alert-warning d-none"></div>
-                    <button type="submit" class="btn w-100 btn-block register">Register</button>
-                </form>
-            </div>
-        </div>
-
-
-        <!--- Login Container   -->
         <div class="row top_border loginContainer" id="login" >
             <div class="col">
                 <h3 class="text-center " style="color:#6383FA;"><b>LOGIN</b></h3>
@@ -90,7 +31,7 @@
                                         person
                                     </span>
                                 </span>
-                                <input name="username" type="text" class="form-control" placeholder="Username" aria-label="Password" aria-describedby="addon-wrapping">
+                                <input autocomplete="off" name="username" type="text" class="form-control" placeholder="Username" aria-label="Password" aria-describedby="addon-wrapping">
                             </div>
                         </div>
                     </div>
@@ -113,7 +54,7 @@
                     </div>
                     <div class="row p-2 text-end">
                         <div class="col-md-12">
-                            Don't have an account? <a id="showRegisterLink" style="color: #0d6efd; cursor: pointer;">Create account</a>
+                            Don't have an account? <a id="showRegisterLink" style="color: #0d6efd; cursor: pointer;" onClick="window.location.href='signup.php'">Create account</a>
                         </div>
                     </div>
                     <div id="errorMessage" class="alert alert-warning d-none"></div>

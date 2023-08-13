@@ -79,6 +79,23 @@ body {
     justify-content: space-between;
     gap: 14rem;
 }
+.navbar{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navbar button{
+  background-color: white;
+  padding: .4rem;
+  border: #6383fa 1px solid;
+  border-radius: .3rem;
+  color: #6383fa;
+}
 @media screen and (max-width: 1200px) {
   .container {
     flex-direction: column;

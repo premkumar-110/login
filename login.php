@@ -5,29 +5,36 @@ include("config.php");
 $response = array(); // Create an array to store the response
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['save_login'])) {
-    // username and password sent from form 
     $myusername = mysqli_real_escape_string($db, $_POST['username']);
     $mypassword = mysqli_real_escape_string($db, $_POST['password']); 
-    
-    $sql = "SELECT * FROM data WHERE uname = '$myusername' and pass = '$mypassword'";
-    $result = mysqli_query($db, $sql);
-    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-    
-    $count = mysqli_num_rows($result);
-    if (empty($myusername)) {
+
+    if (empty($myusername) || empty($mypassword)) {
         $response['status'] = 422;
-        $response['message'] = 'Username and password is required';
-    }
-    // If result matched $myusername and $mypassword, table row must be 1 row
-    else if ($count == 1) {
-        $_SESSION['loggedin'] = TRUE;
-        $_SESSION['login_user'] = $myusername; // Store the username
-        
-        $response['status'] = 200;
-        $response['message'] = 'Login successful';
+        $response['message'] = 'Username and password are required';
     } else {
-        $response['status'] = 422; // You can customize the status code
-        $response['message'] = 'User not found!'; // You can customize the message
+        $sql = "SELECT * FROM data WHERE uname = ?";
+        $stmt = mysqli_prepare($db, $sql);
+        mysqli_stmt_bind_param($stmt, "s", $myusername);
+        mysqli_stmt_execute($stmt);
+        $result = mysqli_stmt_get_result($stmt);
+        $row = mysqli_fetch_assoc($result);
+
+        if ($row) {
+            // Verify the hashed password
+            if (password_verify($mypassword, $row['pass'])) {
+                $_SESSION['loggedin'] = TRUE;
+                $_SESSION['login_user'] = $myusername; // Store the username
+                
+                $response['status'] = 200;
+                $response['message'] = 'Login successful';
+            } else {
+                $response['status'] = 422;
+                $response['message'] = 'Invalid password';
+            }
+        } else {
+            $response['status'] = 422;
+            $response['message'] = 'User not found';
+        }
     }
 
     // Return the JSON response

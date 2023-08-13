@@ -1,17 +1,4 @@
 $(document).ready(function () {
-  const registerContainer = $("#register");
-  const loginContainer = $("#login");
-  const showLoginLink = $("#showLoginLink");
-  const showRegisterLink = $("#showRegisterLink");
-
-  function toggleContainers() {
-     registerContainer.toggle();
-     loginContainer.toggle();
-  }
-
-  // Add click event listeners to the links
-  showLoginLink.click(toggleContainers);
-  showRegisterLink.click(toggleContainers);
 
   const passwordInput = $("#regPass");
   const visibilityToggle = $("#visibility-toggle");
@@ -81,6 +68,7 @@ $(document).ready(function () {
               setTimeout(function () {
                  alertify.dismissAll();
               }, 5000);
+
            } else if (res.status == 500) {
               $("#errorMessage").addClass("d-none");
               $("#reg")[0].reset();
@@ -180,5 +168,18 @@ $(document).ready(function () {
             alertify.error("An error occurred. Please try again later.");
         },
     });
+});
+$("#logoutButton").click(function() {
+   $.ajax({
+       type: "POST",
+       url: "logout.php", // Replace with the actual logout script
+       success: function(response) {
+           // Redirect to the login page after successful logout
+           window.location.href = "index.php";
+       },
+       error: function() {
+           console.error("Logout failed. Please try again later.");
+       }
+   });
 });
 });

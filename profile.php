@@ -40,9 +40,35 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === TRUE) {
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <script src="profile.js"></script>
     <script src="script.js"></script>
+    <style>
+       .navbar{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navbar button{
+  padding: .4rem;
+  border: #6383fa 1px solid;
+  border-radius: .3rem;
+  color: #6383fa;
+  background-color: white;
+}
+        </style>
 </head>
 <body>
+
     <div class="profilecontainer">
+        <div class="navbar">
+        <div>
+            <button id="logoutButton">Logout</button>
+        </div>
+    </div>
+
         <div class="card ">
             <div class="card-header">
                 <h4><b>User Profile</b></h4> <button  onclick="toggleEditCard('DOB')" type="button" class="btn btn-outline-primary editBtn"><span class="material-symbols-outlined" tooltip="Edit your DOB">edit</span>Edit</button>
