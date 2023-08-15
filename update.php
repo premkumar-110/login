@@ -3,7 +3,7 @@ header("Access-Control-Allow-Origin: *"); // Allow requests from any origin
 header("Access-Control-Allow-Methods: POST"); // Allow only POST requests
 header("Content-Type: application/json");
 session_start();
-include("https://login-flame.vercel.app/config.php");
+include("config.php");
 
 $response = array(); // Create an array to store the response
 
