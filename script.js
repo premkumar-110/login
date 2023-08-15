@@ -36,6 +36,7 @@ $(document).ready(function () {
 
   $("#reg").submit(function (e) {
      e.preventDefault();
+
      var formData = new FormData(this);
      formData.append("save_reg", true);
 
