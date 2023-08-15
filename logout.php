@@ -1,7 +1,6 @@
 <?php
-$allowedOrigin = "http://16.171.208.56"; // Replace with your specific allowed origin
-header("Access-Control-Allow-Origin: " . $allowedOrigin);
-header("Access-Control-Allow-Methods: POST");
+header("Access-Control-Allow-Origin: *"); // Allow requests from any origin
+header("Access-Control-Allow-Methods: POST"); // Allow only POST requests
 header("Content-Type: application/json");
 session_start(); // Start or resume the session
 
