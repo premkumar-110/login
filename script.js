@@ -36,7 +36,7 @@ $(document).ready(function () {
 
   $("#reg").submit(function (e) {
      e.preventDefault();
-
+     alert("Called")
      var formData = new FormData(this);
      formData.append("save_reg", true);
 
@@ -77,7 +77,7 @@ $(document).ready(function () {
 
   $("#log").submit(function (e) {
      e.preventDefault();
-
+     alert("Called")
      var formData = new FormData(this);
      formData.append("save_login", true);
 
