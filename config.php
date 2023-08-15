@@ -1,4 +1,5 @@
 <?php
+
    define('DB_SERVER', 'b8wkra5tahb4ckga3lg3-mysql.services.clever-cloud.com');
    define('DB_USERNAME', 'uncin5khkhubuzea');
    define('DB_PASSWORD', 'oqIZjMCzwYy715I7B8Cd');
