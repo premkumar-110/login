@@ -50,7 +50,6 @@ $(document).ready(function () {
            console.log(response);
            var res = jQuery.parseJSON(response);
            console.log(res);
-
            if (res.status == 422) {
               $("#errorMessage").addClass("d-none");
               $("#reg")[0].reset();
@@ -59,12 +58,9 @@ $(document).ready(function () {
            } else if (res.status == 200) {
               $("#errorMessage").addClass("d-none");
               $("#reg")[0].reset();
-
               alertify.set("notifier", "position", "top-right");
               alertify.success(res.message);
-
               $("#user").load(location.href + " #user");
-
               setTimeout(function () {
                  alertify.dismissAll();
               }, 5000);
