@@ -96,6 +96,37 @@ body {
   border-radius: .3rem;
   color: #6383fa;
 }
+.navbar{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navbar button{
+  padding: .4rem;
+  border: #6383fa 1px solid;
+  border-radius: .3rem;
+  color: #6383fa;
+  background-color: white;
+}
+.refandEdit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.title{
+  font-weight: bold;
+  letter-spacing: .3rem;
+}
+input:focus{
+  outline: none;
+  border: none;
+}
 @media screen and (max-width: 1200px) {
   .container {
     flex-direction: column;

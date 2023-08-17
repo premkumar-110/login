@@ -1,5 +1,5 @@
-$(document).ready(function () {
 
+$(document).ready(function () {
   const passwordInput = $("#regPass");
   const visibilityToggle = $("#visibility-toggle");
   const visibility_on = $("#visibility-on");
@@ -177,5 +177,26 @@ $("#logoutButton").click(function() {
            console.error("Logout failed. Please try again later.");
        }
    });
+});
+$("#refresh").click(function () {
+   console.log("Hello")
+   $.ajax({
+      type: "GET",
+      url: "refresh.php", // Create a PHP file to retrieve updated profile data
+      success: function (response) {
+          var data = $.parseJSON(response);
+          console.log(data)
+          if (data.status === 200) {
+              // After updating the data
+         $("#dob").val("2023-08-17");
+         $("#editContact").val("1234567890");
+
+              // Update any other profile fields you need here
+          }
+      },
+      error: function () {
+          alertify.error("An error occurred while fetching profile data.");
+      },
+  });
 });
 });
