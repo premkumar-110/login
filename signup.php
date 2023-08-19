@@ -29,8 +29,8 @@
                                     Username
                                 </label>
                                 <div class="input-group flex-nowrap">
-                                    <span class="input-group-text" id="addon-wrapping"> <i class="bi bi-person"></i> </span>
-                                    <input name="username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" autocomplete="off">
+                                    <span class="input-group-text" id="addon-wrapping"><img src="images/person.svg" width="25"> </span>
+                                    <input name="username" type="text" class="form-control" placeholder="Enter the username" aria-label="Username" aria-describedby="addon-wrapping" autocomplete="off">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -38,9 +38,22 @@
                                 <input name="dob" type="date" class="form-control" id="dob" name="dob">
                             </div>
                         </div>
+
+                        <!-- <div class="row mb-3">
+                            <div class="col-md-12">
+                                <label for="email" class="form-label">
+                                    Email
+                                </label>
+                                <div class="input-group flex-nowrap">
+                                    <span class="input-group-text" id="addon-wrapping"><img src="images/mail.svg" width="25"> </span>
+                                    <input name="email" type="email" class="form-control" placeholder="Enter your Email" aria-label="Username" aria-describedby="addon-wrapping" autocomplete="off">
+                                </div>
+                            </div>
+                        </div> -->
+                        
                         <div class="row mb-3">
                             <div class="col-md-12">
-                                <label for="contact" class="form-label">Contact Details</label>
+                                <label for="contact" class="form-label"> Contact Details</label>
                                 <textarea autocomplete="off" name="contact" style="resize: none;" type="textarea" class="form-control" id="contact" name="contact" placeholder="Enter your contact details"></textarea>
                             </div>
                         </div>
@@ -49,14 +62,12 @@
                                 <label for="password" class="form-label">Password</label>
                                 <div class="input-group flex-nowrap">
                                     <span class="input-group-text" id="addon-wrapping">
-                                        <span class="material-symbols-outlined">
-                                            password
-                                        </span>
+                                    <img src="images/password.svg" width="25">
                                     </span>
-                                    <input id="regPass" name="password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="addon-wrapping">
+                                    <input id="regPass" name="password" type="password" class="form-control" placeholder="Enter the password" aria-label="Password" aria-describedby="addon-wrapping">
                                     <span class="input-group-text" id="visibility-toggle">
-                                        <span class="material-symbols-outlined " id="visibility-on" style="display: none;"> visibility</span>
-                                        <span class="material-symbols-outlined " id="visibility-off">visibility_off</span>
+                                        <span class="material-symbols-outlined " id="visibility-on" style="display: none;"> <img src="images/eye.svg" width="25"></span>
+                                        <span class="material-symbols-outlined " id="visibility-off"><img src="images/eyeSlash.svg" width="25"></span>
                                     </span>
                                 </div>
                             </div>

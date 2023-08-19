@@ -1,7 +1,4 @@
 <?php
-header("Access-Control-Allow-Origin: *"); // Allow requests from any origin
-header("Access-Control-Allow-Methods: POST"); // Allow only POST requests
-header("Content-Type: application/json");
 session_start(); // Start or resume the session
 
 // Check if the user is logged in
@@ -22,10 +19,10 @@ if(isset($_SESSION['user_id'])) {
 } else {
     // Respond with an error message
     $response = array(
-        "status" => "error",
+        "status" => "error",    
         "message" => "You are not logged in"
     );
     echo json_encode($response);
     exit();
 }
-?>
+?> 

@@ -103,7 +103,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
+  color: #6383fa;
   button {
     padding: 0.4rem;
     border: #6383fa 1px solid;
@@ -123,6 +123,12 @@ body {
 .title {
   font-weight: bold;
   letter-spacing: 0.3rem;
+}
+.contactContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
 }
 
 @media screen and (max-width: 1200px) {

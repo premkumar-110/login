@@ -27,9 +27,7 @@
                             <label for="password" class="form-label">Username</label>
                             <div class="input-group flex-nowrap">
                                 <span class="input-group-text" id="addon-wrapping">
-                                    <span class="material-symbols-outlined">
-                                        person
-                                    </span>
+                                    <img src="images/person.svg" width="25">
                                 </span>
                                 <input autocomplete="off" name="username" type="text" class="form-control" placeholder="Enter the username..." aria-label="Password" aria-describedby="addon-wrapping">
                             </div>
@@ -40,14 +38,12 @@
                             <label for="password" class="form-label">Password</label>
                             <div class="input-group flex-nowrap">
                                 <span class="input-group-text" id="addon-wrapping">
-                                    <span class="material-symbols-outlined">
-                                        password
-                                    </span>
+                                <img src="images/password.svg" width="25">
                                 </span>
                                 <input id="loginPass" name="password" type="password" class="form-control" placeholder="Enter the password..." aria-label="Password" aria-describedby="addon-wrapping">
                                 <span class="input-group-text" id="login-visibility-toggle">
-                                    <span class="material-symbols-outlined " id="login-visibility-on" style="display: none;"> visibility</span>
-                                    <span class="material-symbols-outlined " id="login-visibility-off">visibility_off</span>
+                                    <span class="material-symbols-outlined " id="login-visibility-on" style="display: none;"> <img src="images/eye.svg" width="25"></span>
+                                    <span class="material-symbols-outlined " id="login-visibility-off"><img src="images/eyeSlash.svg" width="25"></span>
                                 </span>
                             </div>
                         </div>
@@ -58,7 +54,7 @@
                         </div>
                     </div>
                     <div id="errorMessage" class="alert alert-warning d-none"></div>
-                    <button type="submit" class="btn w-100 btn-block register">Login</button>
+                    <button type="submit" class="btn w-100 btn-block register"> Login</button>
                 </form>
             </div>
         </div>

@@ -54,7 +54,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === TRUE) {
             <div class="card-header">
                 <h4><b>User Profile</b></h4>
                 <!--<span class="refandEdit"> <span class="material-symbols-outlined" id="refresh" tooltip="Refresh profile data">refresh</span>-->
-                <button  onclick="toggleEditCard('DOB')" type="button" class="btn btn-outline-primary editBtn"><span class="material-symbols-outlined" tooltip="Edit your DOB">edit</span>Edit</button><!--</span>-->
+                <button  onclick="toggleEditCard('DOB')" type="button" class="btn btn-outline-primary editBtn"><span class="material-symbols-outlined">edit</span>Edit</button><!--</span>-->
             </div>
             <div class="card-body">
                 <table class="table">
@@ -84,6 +84,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === TRUE) {
         <div class="card mt-3" id="editCard" style="display: none;">
             <div class="card-header text-center">
                 <h3><b>Edit Profile</b></h3>
+                <img src="images/close.svg" width="25" onclick="toggleEditCard('DOB')">
             </div>
             <div class="card-body">
                 <form id="editForm">
