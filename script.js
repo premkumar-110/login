@@ -42,7 +42,7 @@ $(document).ready(function () {
 
      $.ajax({
         type: "POST",
-        url: "https://login-flame.vercel.app/insert.php",
+        url: "https://premkumar-110.github.io/login/insert.php",
         data: formData,
         processData: false,
         contentType: false,
@@ -83,7 +83,7 @@ $(document).ready(function () {
 
      $.ajax({
         type: "POST",
-        url: "https://login-flame.vercel.app/login.php",
+        url: "https://premkumar-110.github.io/login/login.php",
         data: formData,
         processData: false,
         contentType: false,
@@ -131,7 +131,7 @@ $(document).ready(function () {
 
     $.ajax({
         type: "POST",
-        url: "https://login-flame.vercel.app/update.php",
+        url: "https://premkumar-110.github.io/login/update.php",
         data: formData,
         processData: false,
         contentType: false,
@@ -168,7 +168,7 @@ $(document).ready(function () {
 $("#logoutButton").click(function() {
    $.ajax({
        type: "POST",
-       url: "https://login-flame.vercel.app/logout.php", // Replace with the actual logout script
+       url: "https://premkumar-110.github.io/login/logout.php", // Replace with the actual logout script
        success: function(response) {
            // Redirect to the login page after successful logout
            window.location.href = "index.php";
