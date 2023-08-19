@@ -42,7 +42,7 @@ $(document).ready(function () {
 
      $.ajax({
         type: "POST",
-        url: "https://premkumar-110.github.io/login/insert.php",
+        url: "insert.php",
         data: formData,
         processData: false,
         contentType: false,
@@ -83,7 +83,7 @@ $(document).ready(function () {
 
      $.ajax({
         type: "POST",
-        url: "https://premkumar-110.github.io/login/login.php",
+        url: "login.php",
         data: formData,
         processData: false,
         contentType: false,
@@ -131,7 +131,7 @@ $(document).ready(function () {
 
     $.ajax({
         type: "POST",
-        url: "https://premkumar-110.github.io/login/update.php",
+        url: "update.php",
         data: formData,
         processData: false,
         contentType: false,
@@ -168,7 +168,7 @@ $(document).ready(function () {
 $("#logoutButton").click(function() {
    $.ajax({
        type: "POST",
-       url: "https://premkumar-110.github.io/login/logout.php", // Replace with the actual logout script
+       url: "logout.php", // Replace with the actual logout script
        success: function(response) {
            // Redirect to the login page after successful logout
            window.location.href = "index.php";
