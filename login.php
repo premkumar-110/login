@@ -1,4 +1,13 @@
 <?php
+
+header("Access-Control-Allow-Origin: *");
+
+// Allow specific HTTP methods (e.g., POST, GET, OPTIONS)
+header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
+
+// Allow specific headers to be sent or received
+header("Access-Control-Allow-Headers: Content-Type");
+
 session_start();
 include("config.php");
 
