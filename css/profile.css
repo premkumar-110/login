@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.shadow {
+  border: #d5429b 1px solid;
+  border-radius: 2rem;
+  height: 100%;
+  padding: 1rem;
+}
+
+.profile-tab-nav {
+  min-width: 250px;
+}
+
+.tab-content {
+  flex: 1;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.nav-pills a.nav-link {
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
+  color: #333;
+}
+.nav-pills a.nav-link i {
+  width: 20px;
+}
+
+.img-circle img {
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  border: 5px solid #fff;
+}
+.profileContainer {
+  width: 90%;
+  height: 90%;
+}
+.container {
+  width: 100%;
+
+  height: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+.nav-pills .nav-link.active {
+  border-radius: 0.3rem;
+  background-color: #d5429b; /* Change this to the desired color */
+  color: #fff; /* Change this to the desired text color for the active link */
+}
+.btnColor {
+  color: white;
+  background-color: #d5429b;
+}
+.btnColor:hover {
+  color: white;
+  background-color: #d5429b;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #d5429b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem;
+  color: white;
+}
+header p {
+  height: 2rem;
+  font-size: 1.5rem;
+  display: grid;
+  place-content: center;
+  height: 100%;
+}
+header button {
+  padding: 0.3rem 0.5rem;
+  background-color: #d5429b;
+  border: white 1px solid;
+  color: white;
+  border-radius: 0.3rem;
+}
+
+#errorMessage {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  transition: all 0.1s ease-in;
+}
+/* Custom alertify error style */
+.image-upload{
+  width: 70%;
+  height: 70%;
+margin: 0 auto;
+overflow: hidden;
+}
+.image-upload input {
+      position: relative;
+      width: 100%;
+      opacity: 0;
+  }
+.upload-field {
+display: block;
+background: #F4FAFE;
+padding: 12px;
+border-radius: 11px;
+}
+
+.upload-field .file-thumbnail {
+cursor: pointer;
+border: 1px dashed gray;
+border-radius: 11px;
+text-align: center;
+padding: 20px;
+}
+
+.upload-field .file-thumbnail img {
+width: 15rem;
+}
+
+.upload-field .file-thumbnail h3 {
+font-size: 12px;
+color: #000000;
+font-weight: 600;
+margin-bottom: 4px;
+}
+
+.upload-field .file-thumbnail p {
+font-size: 12px;
+margin-bottom: 0;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  body {
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 130vh;
+    font-family: "Bricolage Grotesque", sans-serif;
+  }
+  
+  .shadow {
+    border: #d5429b 1px solid;
+    border-radius: 2rem;
+    height: fit-content;
+    width: 95%;
+    padding: 1rem;
+  }
+  
+  .profile-tab-nav {
+    min-width: 250px;
+  }
+  
+  
+  
+  .img-circle img {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    border: 5px solid #fff;
+  }
+  .profileContainer {
+    width: 90%;
+    min-height: 90%;
+  }
+  .container {
+    width: 100%;
+  
+    height: 100%;
+  }
+  header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+  }
+  header p {
+    height: 2rem;
+    font-size: 1.5rem;
+    display: grid;
+    place-content: center;
+    height: 100%;
+  }
+  header button {
+    padding: 0.3rem 0.5rem;
+    background-color: #d5429b;
+    border: white 1px solid;
+    color: white;
+    border-radius: 0.3rem;
+  }
+  
+}
