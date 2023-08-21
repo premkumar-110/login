@@ -54,7 +54,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === TRUE) {
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="../css/profile.css" />
+    <link rel="stylesheet" href="profile.css" />
     <link
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"
@@ -68,8 +68,8 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === TRUE) {
       crossorigin="anonymous"
     ></script>
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    <script src="../scripts/script.js"></script>
-    <script src="../scripts/profile.js"></script>
+    <script src="script.js"></script>
+    <script src="profile.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.24/sweetalert2.all.js"></script>
     
   </head>
@@ -301,7 +301,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === TRUE) {
                     <div class="input-group">
                       <span class="input-group-text">
                         <img
-                          src="../images/password.svg"
+                          src="password.svg"
                           width="25"
                           alt="Password Icon"
                         />
@@ -325,7 +325,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === TRUE) {
                           style="display: none"
                         >
                           <img
-                            src="../images/eye.svg"
+                            src="eye.svg"
                             width="25"
                             alt="Show Password"
                         /></span>
@@ -333,7 +333,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === TRUE) {
                           class="material-symbols-outlined"
                           id="profile-visibility-off"
                           ><img
-                            src="../images/eyeSlash.svg"
+                            src="eyeSlash.svg"
                             width="25"
                             alt="Hide Password"
                         /></span>
@@ -350,7 +350,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === TRUE) {
                     <div class="input-group">
                       <span class="input-group-text">
                         <img
-                          src="../images/password.svg"
+                          src="password.svg"
                           width="25"
                           alt="Password Icon"
                         />
@@ -374,7 +374,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === TRUE) {
                           style="display: none"
                         >
                           <img
-                            src="../images/eye.svg"
+                            src="eye.svg"
                             width="25"
                             alt="Show Password"
                         /></span>
@@ -382,7 +382,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === TRUE) {
                           class="material-symbols-outlined"
                           id="profile-new-visibility-off"
                           ><img
-                            src="../images/eyeSlash.svg"
+                            src="eyeSlash.svg"
                             width="25"
                             alt="Hide Password"
                         /></span>
@@ -399,7 +399,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === TRUE) {
                     <div class="input-group">
                       <span class="input-group-text">
                         <img
-                          src="../images/password.svg"
+                          src="password.svg"
                           width="25"
                           alt="Password Icon"
                         />
