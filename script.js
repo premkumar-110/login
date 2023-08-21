@@ -277,7 +277,7 @@ $("#logoutButton").click(function() {
        url: "logout.php", // Replace with the actual logout script
        success: function(response) {
            // Redirect to the login page after successful logout
-           window.location.href = "login.html";
+           window.location.href = "index.php";
        },
        error: function() {
            console.error("Logout failed. Please try again later.");
