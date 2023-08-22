@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Roboto&display=swap");
+
 * {
   padding: 0;
   margin: 0;
 }
+
 body {
   overflow: hidden;
   display: flex;
@@ -11,12 +13,14 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
 #errorMessage {
   position: absolute;
   top: 2rem;
   right: 1rem;
   transition: all 0.1s ease-in;
 }
+
 .backgroundContainer {
   position: absolute;
   top: 0;
@@ -26,6 +30,7 @@ body {
   background-color: #fbdefa;
   z-index: -1;
 }
+
 .circle1 {
   position: absolute;
   width: 300px;
@@ -37,6 +42,7 @@ body {
   animation: mymove 5s infinite;
   box-shadow: #d5429b 0px 5px 15px;
 }
+
 .circle2 {
   position: absolute;
   width: 300px;
@@ -48,6 +54,7 @@ body {
   animation: mymove 5s infinite;
   box-shadow: #d5429b 0px 5px 15px;
 }
+
 .circle3 {
   position: absolute;
   width: 300px;
@@ -59,6 +66,7 @@ body {
   animation: mymove 5s infinite;
   box-shadow: #d5429b 0px 5px 15px;
 }
+
 .circle4 {
   position: absolute;
   width: 300px;
@@ -76,10 +84,12 @@ body {
     width: 300px;
     height: 300px;
   }
+
   50% {
     width: 320px;
     height: 320px;
   }
+
   100% {
     width: 300px;
     height: 300px;
@@ -100,6 +110,7 @@ body {
   width: 40%;
   height: 75%;
 }
+
 .details {
   border-left: 1px solid lightgray;
   height: 100%;
@@ -110,9 +121,11 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
 .title span {
   font-size: 2rem;
 }
+
 .loginBtn {
   width: 100%;
   align-self: center;
@@ -129,6 +142,7 @@ body {
     width: 120vw;
     height: 120vh;
   }
+
   .backgroundContainer {
     overflow: hidden;
     position: absolute;
@@ -138,6 +152,7 @@ body {
     background-color: #fbdefa;
     z-index: -1;
   }
+
   .logincontainer {
     width: 80%;
     height: 95%;
@@ -152,6 +167,7 @@ body {
   .LoginVector {
     display: none;
   }
+
   .details {
     border-left: 0px solid lightgray;
     height: 100%;
@@ -163,39 +179,46 @@ body {
     padding-right: 1rem;
     overflow: scroll;
   }
+
   .circle1 {
     width: 200px;
     height: 200px;
     top: -10075x;
     left: -75px;
   }
+
   .circle2 {
     width: 200px;
     height: 200px;
     top: -75px;
     right: -75px;
   }
+
   .circle3 {
     width: 100px;
     height: 100px;
     bottom: -75px;
     left: -75px;
   }
+
   .circle4 {
     width: 200px;
     height: 200px;
     bottom: -75px;
     right: -75px;
   }
+
   @keyframes mymove {
     0% {
       width: 200px;
       height: 200px;
     }
+
     50% {
       width: 220px;
       height: 220px;
     }
+
     100% {
       width: 200px;
       height: 200px;
