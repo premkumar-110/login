@@ -92,7 +92,7 @@ $(document).ready(function () {
                                title: 'Success',
                                text: 'Registered Successful'
                }).then(function() {
-                   window.location = "login.html";
+                   window.location = "index.php";
                });
                
            } else if (res.status == 500) {
